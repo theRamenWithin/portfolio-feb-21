@@ -35,10 +35,10 @@ function App() {
             <p>My Projects</p>
           </div>
           {/* Project tiles */}
-          <section className="flex flex-wrap justify-center mt-6 text-lg">
+          <section className="flex flex-wrap justify-start mt-6 text-lg">
 
             {/* Project tile */}
-            <div className="max-w-2xl xl:max-w-lg mb-6 xl:m-6">
+            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
               <p className="font-bold mb-2 text-gray-800">AppointmentNow</p>
               <section className="flex mt-2">
                 <img src={ReactIcon} alt="react icon" className="w-8 mr-2"/>
@@ -55,7 +55,7 @@ function App() {
             </div>
 
             {/* Project tile */}
-            <div className="max-w-2xl xl:max-w-lg mb-6 xl:m-6">
+            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
               <p className="font-bold mb-2 text-gray-800">SwordArtisanOnline</p>
               <section className="flex mt-2">
                 <img src={RailsIcon} alt="rails icon" className="w-8 mr-2"/>
@@ -72,7 +72,7 @@ function App() {
             </div>
 
             {/* Project tile */}
-            <div className="max-w-2xl xl:max-w-lg mb-6 xl:m-6">
+            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
               <p className="font-bold mb-2 text-gray-800">Blogapp</p>
               <section className="flex mt-2">
                 <img src={RailsIcon} alt="rails icon" className="w-8 mr-2"/>
@@ -88,7 +88,7 @@ function App() {
             </div>
 
             {/* Project tile */}
-            <div className="max-w-2xl xl:max-w-lg mb-6 xl:m-6">
+            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
               <p className="font-bold mb-2 text-gray-800">Dungeons of Heck</p>
               <section className="flex mt-2">
                 <img src={RubyIcon} alt="ruby icon" className="w-8 mr-2"/>
@@ -104,7 +104,7 @@ function App() {
             </div>
             
             {/* Project tile */}
-            <div className="max-w-2xl xl:max-w-lg mb-6 xl:m-6">
+            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
               <p className="font-bold mb-2 text-gray-800">Example Portfolio Website</p>
               <section className="flex mt-2">
                 <img src={HTML5Icon} alt="html5 icon" className="w-8 mr-2"/>
