@@ -9,9 +9,9 @@ import Resume from './assets/docs/Resume_AlexPike.pdf'
 function App() {
   return (
     // Window container
-    <section className="App h-full w-full flex font-sans text-gray-600">
+    <section className="App h-full w-full flex justify-center font-sans text-gray-600">
       {/* Content container */}
-      <div className="p-12 md:p-16 lg:p-24">
+      <div className="pt-8 h-full w-4/5 max-w-screen-xl">
 
         {/* Lead text */}
         <section className="text-5xl font-bold text-gray-800 leading-tight mb-4">
