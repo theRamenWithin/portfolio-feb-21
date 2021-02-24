@@ -6,6 +6,9 @@ module.exports = {
       'sans': ['Open Sans', 'sans-serif'],
       'mono': ['Roboto Mono', 'monospace']
     },
+    maxWidth: {
+      '1/2': '50%',
+    },
     extend: {},
   },
   variants: {
