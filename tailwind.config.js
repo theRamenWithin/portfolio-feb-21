@@ -8,6 +8,7 @@ module.exports = {
     },
     maxWidth: {
       '1/2': '50%',
+      'screen-xl': '1280px',
     },
     extend: {},
   },
