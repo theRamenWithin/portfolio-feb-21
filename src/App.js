@@ -25,7 +25,7 @@ function App() {
           </p>
           {/* Links */}
           <p className="leading-snug text-lg">
-            <a href="https://github.com/theRamenWithin/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Github</a> / <a href={Resume} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Resume</a> / <a href="https://www.linkedin.com/in/alex-pike-ap/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">LinkedIn</a> / <a href="https://twitter.com/theramenwithin/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Twitter</a>
+            <a href="https://github.com/theRamenWithin/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Github</a> / <a href={Resume} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Resume</a> / <a href="https://www.linkedin.com/in/alex-pike-ap/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">LinkedIn</a> / <a href="https://twitter.com/theramenwithin/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Twitter</a> / <a href="mailto:alex.pike.ap@outlook.com" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Email</a>
           </p>
         </section>
 
