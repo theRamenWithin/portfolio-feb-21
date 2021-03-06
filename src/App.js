@@ -13,7 +13,7 @@ function App() {
       {/* Content container */}
       <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
         {/* Lead text */}
-        <section className="text-5xl font-bold text-gray-800 leading-tight mb-4">
+        <section className="md:text-5xl sm:text-4xl text-3xl font-bold text-gray-800 leading-tight mb-4">
           Hello! I’m Alex Pike, a full-stack web developer based in Sydney,
           Australia. I am looking for an entry-level position where I can
           develop my craft as a customer-focused programmer.
@@ -21,7 +21,7 @@ function App() {
 
         <section>
           {/* Sub text */}
-          <p className="mb-4 text-3xl leading-snug">
+          <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug">
             I just graduated from{' '}
             <a
               href="https://coderacademy.edu.au/"
@@ -43,7 +43,7 @@ function App() {
             until April 1st.
           </p>
           {/* Links */}
-          <p className="leading-snug text-lg">
+          <p className="leading-snug md:text-xl sm:text-lg text-base">
             <a
               href="https://github.com/theRamenWithin/"
               target="_blank"
@@ -92,12 +92,12 @@ function App() {
         </section>
 
         {/* Project container */}
-        <section className="mt-16">
-          <div className="font-mono text-2xl">
+        <section className="lg:mt-16 md:mt-12 sm:mt-10 mt-8">
+          <div className="font-mono sm:text-xl text-lg">
             <p>My Projects</p>
           </div>
           {/* Project tiles */}
-          <section className="flex flex-wrap justify-start mt-6 text-lg">
+          <section className="flex flex-wrap justify-start mt-6 sm:text-lg text-base">
             {/* Project tile */}
             <div className="xl:max-w-1/2 mb-6 xl:pr-12">
               <p className="font-bold mb-2 text-gray-800">AppointmentNow</p>
