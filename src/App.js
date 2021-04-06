@@ -13,7 +13,7 @@ function App() {
       {/* Content container */}
       <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
         {/* Lead text */}
-        <section className="md:text-5xl sm:text-4xl text-3xl font-bold text-gray-800 leading-tight mb-4">
+        <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4">
           Hello! I’m Alex Pike, a full-stack web developer based in Sydney,
           Australia. I am looking for an entry-level position where I can
           develop my craft as a customer-focused programmer.
