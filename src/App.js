@@ -14,15 +14,14 @@ function App() {
       <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
         {/* Lead text */}
         <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4">
-          Hello! I’m Alex Pike, a full-stack web developer based in Sydney,
-          Australia. I am looking for an entry-level position where I can
-          develop my craft as a customer-focused programmer.
+          Hello! I’m Alex Pike, a full-stack web developer based in Sydney, Australia. I am looking
+          for an entry-level position where I can develop my craft as a customer-focused programmer.
         </section>
 
         <section>
           {/* Sub text */}
           <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug">
-            I just graduated from{' '}
+            I graduated from{' '}
             <a
               href="https://coderacademy.edu.au/"
               target="_blank"
@@ -31,7 +30,7 @@ function App() {
             >
               Coder Academy
             </a>{' '}
-            and am currently interning with{' '}
+            in Feb of this year and my most recent role was interning with{' '}
             <a
               href="https://www.healthbank.io/"
               target="_blank"
@@ -40,7 +39,7 @@ function App() {
             >
               HealthBank
             </a>{' '}
-            until April 1st.
+            on their production Ruby on Rails API, utilising GraphQL and RSpec, until April 1st.
           </p>
           {/* Links */}
           <p className="leading-snug md:text-xl sm:text-lg text-base">
@@ -107,14 +106,12 @@ function App() {
               </section>
               <section>
                 <p className="mt-2">
-                  A <b>React</b> front-end, utilising Material UI, with a{' '}
-                  <b>Ruby on Rails</b> API back-end, reponding to axios
-                  requests. This project was part of my group, final assignment
-                  at Coder Academy.
+                  A <b>React</b> front-end, utilising Material UI, with a <b>Ruby on Rails</b> API
+                  back-end, reponding to axios requests. This project was part of my group, final
+                  assignment at Coder Academy.
                 </p>
                 <p className="mt-2">
-                  AppointmentNow is a scalable, booking system customers and
-                  providers.
+                  AppointmentNow is a scalable, booking system customers and providers.
                 </p>
               </section>
               <section className="mt-2">
@@ -147,13 +144,12 @@ function App() {
               </section>
               <section>
                 <p className="mt-2">
-                  A <b>Ruby on Rails</b> application, utilising{' '}
-                  <b>JavaScript</b> with the Twilio library. This project was
-                  the last assignment of my second term at Coder Academy.
+                  A <b>Ruby on Rails</b> application, utilising <b>JavaScript</b> with the Twilio
+                  library. This project was the last assignment of my second term at Coder Academy.
                 </p>
                 <p className="mt-2">
-                  SwordArtisanOnline is a two-way market place for Historical
-                  European Martial Arts (HEMA) equipment.
+                  SwordArtisanOnline is a two-way market place for Historical European Martial Arts
+                  (HEMA) equipment.
                 </p>
               </section>
               <section className="mt-2">
@@ -185,13 +181,11 @@ function App() {
               </section>
               <section>
                 <p className="mt-2">
-                  A fully <b>Ruby on Rails</b> application, created as part of
-                  3-day hackaton at Coder Academy in a team of 3 collaborating
-                  over <b>Git</b>.
+                  A fully <b>Ruby on Rails</b> application, created as part of 3-day hackaton at
+                  Coder Academy in a team of 3 collaborating over <b>Git</b>.
                 </p>
                 <p className="mt-2">
-                  Blogapp is a simple app for creating, reading, editing and
-                  deleting blog posts.
+                  Blogapp is a simple app for creating, reading, editing and deleting blog posts.
                 </p>
               </section>
               <section className="mt-2">
@@ -223,14 +217,12 @@ function App() {
               </section>
               <section>
                 <p className="mt-2">
-                  A <b>Ruby</b> terminal application, utilising third-party
-                  gems. This project was the last assignment of my first term at
-                  Coder Academy.
+                  A <b>Ruby</b> terminal application, utilising third-party gems. This project was
+                  the last assignment of my first term at Coder Academy.
                 </p>
                 <p className="mt-2">
-                  Dungeons Of Heck is a simple Doge themed dungeon crawler where
-                  you assume the role of a GOOD BOY to destroy HECKIN BAD THINGS
-                  across the land.
+                  Dungeons Of Heck is a simple Doge themed dungeon crawler where you assume the role
+                  of a GOOD BOY to destroy HECKIN BAD THINGS across the land.
                 </p>
               </section>
               <section className="mt-2">
@@ -256,18 +248,16 @@ function App() {
 
             {/* Project tile */}
             <div className="xl:max-w-1/2 mb-6 xl:pr-12">
-              <p className="font-bold mb-2 text-gray-800">
-                Example Portfolio Website
-              </p>
+              <p className="font-bold mb-2 text-gray-800">Example Portfolio Website</p>
               <section className="flex mt-2">
                 <img src={HTML5Icon} alt="html5 icon" className="w-8 mr-2" />
                 <img src={CSS3Icon} alt="css3 icon" className="w-8 mr-2" />
               </section>
               <section>
                 <p className="mt-2">
-                  A portfolio website written in vanilla <b>HTML5</b> &{' '}
-                  <b>CSS3</b>. This project was the second assignment of my
-                  first term at Coder Academy and the first website I ever made.
+                  A portfolio website written in vanilla <b>HTML5</b> & <b>CSS3</b>. This project
+                  was the second assignment of my first term at Coder Academy and the first website
+                  I ever made.
                 </p>
               </section>
               <section className="mt-2">
