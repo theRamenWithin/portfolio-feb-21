@@ -1,10 +1,10 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: ['./src/App.js', './src/components/**/*.{jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Open Sans', 'sans-serif'],
-      'mono': ['Roboto Mono', 'monospace']
+      sans: ['Open Sans', 'sans-serif'],
+      mono: ['Roboto Mono', 'monospace'],
     },
     maxWidth: {
       '1/2': '50%',
@@ -16,4 +16,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
