@@ -1,5 +1,5 @@
 import Icon from '../Icon/Icon';
-import LinkContainer from '../LinkContainer/LinkContainer';
+import LinkContainer from '../Link/LinkContainer';
 
 export default function ProjectTile(props) {
   return (

@@ -10,14 +10,9 @@ import TSIcon from './assets/icons/ts.svg';
 import CypressIcon from './assets/icons/cypress.svg';
 
 import ProjectTile from './components/ProjectTile/ProjectTile';
-import LinkContainer from './components/LinkContainer/LinkContainer';
-
-const links = [
-  { url: 'https://github.com/theRamenWithin/', view: 'Github' },
-  { url: Resume, view: 'Resume' },
-  { url: 'https://www.linkedin.com/in/alex-pike-ap/', view: 'LinkedIn' },
-  { url: 'alex.pike.ap@outlook.com', view: 'Email' },
-];
+import ProjectTileHeading from './components/ProjectTile/ProjectTileHeading';
+import ProjectTileSection from './components/ProjectTile/ProjectTileSection';
+import LinkContainer from './components/Link/LinkContainer';
 
 function App() {
   return (
@@ -39,17 +34,22 @@ function App() {
           </p>
           {/* Links */}
           <p className="leading-snug md:text-xl sm:text-lg text-base">
-            <LinkContainer links={links} />
+            <LinkContainer
+              links={[
+                { url: 'https://github.com/theRamenWithin/', view: 'Github' },
+                { url: Resume, view: 'Resume' },
+                { url: 'https://www.linkedin.com/in/alex-pike-ap/', view: 'LinkedIn' },
+                { url: 'alex.pike.ap@outlook.com', view: 'Email' },
+              ]}
+            />
           </p>
         </section>
 
         {/* Project container */}
         <section className="lg:mt-16 md:mt-12 sm:mt-10 mt-8">
           {/* Project tiles */}
-          <div className="font-mono sm:text-xl text-lg">
-            <p>Professional Projects</p>
-          </div>
-          <section className="flex flex-wrap justify-start mt-6 sm:text-lg text-base">
+          <ProjectTileHeading heading={'Professional Projects'} />
+          <ProjectTileSection>
             <ProjectTile
               title={'Cypress TypeScript Demo'}
               icons={[CypressIcon, TSIcon]}
@@ -75,12 +75,10 @@ function App() {
                 { url: 'https://github.com/theRamenWithin/swaggerpetstore-superagent-typescript', view: 'Github' },
               ]}
             />
-          </section>
+          </ProjectTileSection>
 
-          <div className="font-mono sm:text-xl text-lg">
-            <p>Class Projects</p>
-          </div>
-          <section className="flex flex-wrap justify-start mt-6 sm:text-lg text-base">
+          <ProjectTileHeading heading={'Class Projects'} />
+          <ProjectTileSection>
             <ProjectTile
               title={'AppointmentNow'}
               icons={[ReactIcon, RailsIcon]}
@@ -162,7 +160,7 @@ function App() {
                 { url: 'https://alexpikeap.netlify.app', view: 'Live' },
               ]}
             />
-          </section>
+          </ProjectTileSection>
         </section>
       </div>
     </section>
