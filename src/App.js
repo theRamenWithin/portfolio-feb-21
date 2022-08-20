@@ -1,10 +1,13 @@
+import Resume from './assets/docs/Resume_AlexPike.pdf';
+
 import HTML5Icon from './assets/icons/html5.svg';
 import CSS3Icon from './assets/icons/css3.svg';
 import JSIcon from './assets/icons/js.svg';
 import RubyIcon from './assets/icons/ruby.svg';
 import RailsIcon from './assets/icons/rails.svg';
 import ReactIcon from './assets/icons/react.svg';
-import Resume from './assets/docs/Resume_AlexPike.pdf';
+
+import ProjectTile from './components/ProjectTile/ProjectTile';
 
 function App() {
   return (
@@ -14,8 +17,8 @@ function App() {
       <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
         {/* Lead text */}
         <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4">
-          Hello! I’m Alex Pike, a full-stack web developer based in Sydney, Australia. I am looking
-          for an entry-level position where I can develop my craft as a customer-focused programmer.
+          Hello! I’m Alex Pike, a full-stack web developer based in Sydney, Australia. I am looking for an entry-level
+          position where I can develop my craft as a customer-focused programmer.
         </section>
 
         <section>
@@ -52,12 +55,7 @@ function App() {
               Github
             </a>{' '}
             /{' '}
-            <a
-              href={Resume}
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
+            <a href={Resume} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
               Resume
             </a>{' '}
             /{' '}
@@ -97,189 +95,69 @@ function App() {
           </div>
           {/* Project tiles */}
           <section className="flex flex-wrap justify-start mt-6 sm:text-lg text-base">
-            {/* Project tile */}
-            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
-              <p className="font-bold mb-2 text-gray-800">AppointmentNow</p>
-              <section className="flex mt-2">
-                <img src={ReactIcon} alt="react icon" className="w-8 mr-2" />
-                <img src={RailsIcon} alt="rails icon" className="w-8 mr-2" />
-              </section>
-              <section>
-                <p className="mt-2">
-                  A <b>React</b> front-end, utilising Material UI, with a <b>Ruby on Rails</b> API
-                  back-end, reponding to axios requests. This project was part of my group, final
-                  assignment at Coder Academy.
-                </p>
-                <p className="mt-2">
-                  AppointmentNow is a scalable, booking system customers and providers.
-                </p>
-              </section>
-              <section className="mt-2">
-                <a
-                  href="https://github.com/theRamenWithin/T3A2_Project/blob/main/docs/README.md"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  View on Github
-                </a>{' '}
-                /
-                <a
-                  href="https://appointmentnow.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline ml-2"
-                >
-                  View Live
-                </a>
-              </section>
-            </div>
+            <ProjectTile
+              title={'AppointmentNow'}
+              icons={[ReactIcon, RailsIcon]}
+              paragraphs={[
+                'A React front-end, utilising Material UI, with a Ruby on Rails API back-end, reponding to axios requests. This project was part of my group, final assignment at Coder Academy.',
+                'AppointmentNow is a scalable, booking system customers and providers.',
+              ]}
+              links={[
+                { url: 'https://github.com/theRamenWithin/T3A2_Project/blob/main/docs/README.md', view: 'on Github' },
+                { url: 'https://appointmentnow.netlify.app/', view: 'Live' },
+              ]}
+            />
 
-            {/* Project tile */}
-            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
-              <p className="font-bold mb-2 text-gray-800">SwordArtisanOnline</p>
-              <section className="flex mt-2">
-                <img src={RailsIcon} alt="rails icon" className="w-8 mr-2" />
-                <img src={JSIcon} alt="javascript icon" className="w-8 mr-2" />
-              </section>
-              <section>
-                <p className="mt-2">
-                  A <b>Ruby on Rails</b> application, utilising <b>JavaScript</b> with the Twilio
-                  library. This project was the last assignment of my second term at Coder Academy.
-                </p>
-                <p className="mt-2">
-                  SwordArtisanOnline is a two-way market place for Historical European Martial Arts
-                  (HEMA) equipment.
-                </p>
-              </section>
-              <section className="mt-2">
-                <a
-                  href="https://github.com/theRamenWithin/SwordArtisanOnline"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  View on Github
-                </a>{' '}
-                /
-                <a
-                  href="https://swordartisanonline.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline ml-2"
-                >
-                  View Live
-                </a>
-              </section>
-            </div>
+            <ProjectTile
+              title={'SwordArtisanOnline'}
+              icons={[RailsIcon, JSIcon]}
+              paragraphs={[
+                'A <b>Ruby on Rails</b> application, utilising <b>JavaScript</b> with the Twilio library. This project was the last assignment of my second term at Coder Academy.',
+                'SwordArtisanOnline is a two-way market place for Historical European Martial Arts (HEMA) equipment.',
+              ]}
+              links={[
+                { url: 'https://github.com/theRamenWithin/SwordArtisanOnline', view: 'on Github' },
+                { url: 'https://swordartisanonline.herokuapp.com/', view: 'Live' },
+              ]}
+            />
 
-            {/* Project tile */}
-            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
-              <p className="font-bold mb-2 text-gray-800">Blogapp</p>
-              <section className="flex mt-2">
-                <img src={RailsIcon} alt="rails icon" className="w-8 mr-2" />
-              </section>
-              <section>
-                <p className="mt-2">
-                  A fully <b>Ruby on Rails</b> application, created as part of 3-day hackaton at
-                  Coder Academy in a team of 3 collaborating over <b>Git</b>.
-                </p>
-                <p className="mt-2">
-                  Blogapp is a simple app for creating, reading, editing and deleting blog posts.
-                </p>
-              </section>
-              <section className="mt-2">
-                <a
-                  href="https://github.com/theRamenWithin/blog_app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  View on Github
-                </a>{' '}
-                /
-                <a
-                  href="https://blogapp-2020.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline ml-2"
-                >
-                  View Live
-                </a>
-              </section>
-            </div>
+            <ProjectTile
+              title={'Blogapp'}
+              icons={[RailsIcon]}
+              paragraphs={[
+                'A fully <b>Ruby on Rails</b> application, created as part of 3-day hackaton at Coder Academy in a team of 3 collaborating over <b>Git</b>.',
+                'Blogapp is a simple app for creating, reading, editing and deleting blog posts.',
+              ]}
+              links={[
+                { url: 'https://github.com/theRamenWithin/blog_app', view: 'on Github' },
+                { url: 'https://blogapp-2020.herokuapp.com/', view: 'Live' },
+              ]}
+            />
 
-            {/* Project tile */}
-            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
-              <p className="font-bold mb-2 text-gray-800">Dungeons of Heck</p>
-              <section className="flex mt-2">
-                <img src={RubyIcon} alt="ruby icon" className="w-8 mr-2" />
-              </section>
-              <section>
-                <p className="mt-2">
-                  A <b>Ruby</b> terminal application, utilising third-party gems. This project was
-                  the last assignment of my first term at Coder Academy.
-                </p>
-                <p className="mt-2">
-                  Dungeons Of Heck is a simple Doge themed dungeon crawler where you assume the role
-                  of a GOOD BOY to destroy HECKIN BAD THINGS across the land.
-                </p>
-              </section>
-              <section className="mt-2">
-                <a
-                  href="https://github.com/theRamenWithin/DungeonsOfHeck"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  View on Github
-                </a>{' '}
-                /
-                <a
-                  href="https://rubygems.org/gems/dungeonsofheck"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline ml-2"
-                >
-                  View on RubyGems
-                </a>
-              </section>
-            </div>
+            <ProjectTile
+              title={'Dungeons of Heck'}
+              icons={[RubyIcon]}
+              paragraphs={[
+                'A <b>Ruby</b> terminal application, utilising third-party gems. This project was the last assignment of my first term at Coder Academy.',
+                'Dungeons Of Heck is a simple Doge themed dungeon crawler where you assume the role of a GOOD BOY to destroy HECKIN BAD THINGS across the land.',
+              ]}
+              links={[
+                { url: 'https://github.com/theRamenWithin/DungeonsOfHeck', view: 'on Github' },
+                { url: 'https://rubygems.org/gems/dungeonsofheck', view: 'on RubyGems' },
+              ]}
+            />
 
-            {/* Project tile */}
-            <div className="xl:max-w-1/2 mb-6 xl:pr-12">
-              <p className="font-bold mb-2 text-gray-800">Example Portfolio Website</p>
-              <section className="flex mt-2">
-                <img src={HTML5Icon} alt="html5 icon" className="w-8 mr-2" />
-                <img src={CSS3Icon} alt="css3 icon" className="w-8 mr-2" />
-              </section>
-              <section>
-                <p className="mt-2">
-                  A portfolio website written in vanilla <b>HTML5</b> & <b>CSS3</b>. This project
-                  was the second assignment of my first term at Coder Academy and the first website
-                  I ever made.
-                </p>
-              </section>
-              <section className="mt-2">
-                <a
-                  href="https://github.com/theRamenWithin/portfolio-sep-20"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  View on Github
-                </a>{' '}
-                /
-                <a
-                  href="https://alexpikeap.netlify.app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline ml-2"
-                >
-                  View Live
-                </a>
-              </section>
-            </div>
+            <ProjectTile
+              title={'My First Portfolio Website'}
+              icons={[HTML5Icon, CSS3Icon]}
+              paragraphs={[
+                'A portfolio website written in vanilla <b>HTML5</b> & <b>CSS3</b>. This project was the second assignment of my first term at Coder Academy and the first website I ever made.',
+              ]}
+              links={[
+                { url: 'https://github.com/theRamenWithin/portfolio-sep-20', view: 'on Github' },
+                { url: 'https://alexpikeap.netlify.app', view: 'Live' },
+              ]}
+            />
           </section>
         </section>
       </div>
