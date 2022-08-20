@@ -63,7 +63,7 @@ function App() {
             />
 
             <ProjectTile
-              title={'SugerAgent TypeScript'}
+              title={'SugerAgent TypeScript Demo'}
               icons={[TSIcon]}
               paragraphs={[
                 <>
