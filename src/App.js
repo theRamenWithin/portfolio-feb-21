@@ -99,8 +99,11 @@ function App() {
               title={'AppointmentNow'}
               icons={[ReactIcon, RailsIcon]}
               paragraphs={[
-                'A React front-end, utilising Material UI, with a Ruby on Rails API back-end, reponding to axios requests. This project was part of my group, final assignment at Coder Academy.',
-                'AppointmentNow is a scalable, booking system customers and providers.',
+                <>
+                  A <b>React</b> front-end, utilising Material UI, with a <b>Ruby on Rails</b> API back-end, reponding
+                  to axios requests. This project was part of my group, final assignment at Coder Academy.
+                </>,
+                <>AppointmentNow is a scalable, booking system customers and providers.</>,
               ]}
               links={[
                 { url: 'https://github.com/theRamenWithin/T3A2_Project/blob/main/docs/README.md', view: 'on Github' },
@@ -112,7 +115,10 @@ function App() {
               title={'SwordArtisanOnline'}
               icons={[RailsIcon, JSIcon]}
               paragraphs={[
-                'A <b>Ruby on Rails</b> application, utilising <b>JavaScript</b> with the Twilio library. This project was the last assignment of my second term at Coder Academy.',
+                <>
+                  A <b>Ruby on Rails</b> application, utilising <b>JavaScript</b> with the Twilio library. This project
+                  was the last assignment of my second term at Coder Academy.
+                </>,
                 'SwordArtisanOnline is a two-way market place for Historical European Martial Arts (HEMA) equipment.',
               ]}
               links={[
@@ -125,8 +131,11 @@ function App() {
               title={'Blogapp'}
               icons={[RailsIcon]}
               paragraphs={[
-                'A fully <b>Ruby on Rails</b> application, created as part of 3-day hackaton at Coder Academy in a team of 3 collaborating over <b>Git</b>.',
-                'Blogapp is a simple app for creating, reading, editing and deleting blog posts.',
+                <>
+                  A fully <b>Ruby on Rails</b> application, created as part of 3-day hackaton at Coder Academy in a team
+                  of 3 collaborating over <b>Git</b>.
+                </>,
+                <>Blogapp is a simple app for creating, reading, editing and deleting blog posts.</>,
               ]}
               links={[
                 { url: 'https://github.com/theRamenWithin/blog_app', view: 'on Github' },
@@ -138,8 +147,14 @@ function App() {
               title={'Dungeons of Heck'}
               icons={[RubyIcon]}
               paragraphs={[
-                'A <b>Ruby</b> terminal application, utilising third-party gems. This project was the last assignment of my first term at Coder Academy.',
-                'Dungeons Of Heck is a simple Doge themed dungeon crawler where you assume the role of a GOOD BOY to destroy HECKIN BAD THINGS across the land.',
+                <>
+                  A <b>Ruby</b> terminal application, utilising third-party gems. This project was the last assignment
+                  of my first term at Coder Academy.
+                </>,
+                <>
+                  Dungeons Of Heck is a simple Doge themed dungeon crawler where you assume the role of a GOOD BOY to
+                  destroy HECKIN BAD THINGS across the land.
+                </>,
               ]}
               links={[
                 { url: 'https://github.com/theRamenWithin/DungeonsOfHeck', view: 'on Github' },
@@ -151,7 +166,10 @@ function App() {
               title={'My First Portfolio Website'}
               icons={[HTML5Icon, CSS3Icon]}
               paragraphs={[
-                'A portfolio website written in vanilla <b>HTML5</b> & <b>CSS3</b>. This project was the second assignment of my first term at Coder Academy and the first website I ever made.',
+                <>
+                  A portfolio website written in vanilla <b>HTML5</b> & <b>CSS3</b>. This project was the second
+                  assignment of my first term at Coder Academy and the first website I ever made.
+                </>,
               ]}
               links={[
                 { url: 'https://github.com/theRamenWithin/portfolio-sep-20', view: 'on Github' },
