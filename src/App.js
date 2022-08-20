@@ -2,13 +2,14 @@ import Resume from './assets/docs/Resume_AlexPike.pdf';
 
 import HTML5Icon from './assets/icons/html5.svg';
 import CSS3Icon from './assets/icons/css3.svg';
-import JSIcon from './assets/icons/js.svg';
 import RubyIcon from './assets/icons/ruby.svg';
 import RailsIcon from './assets/icons/rails.svg';
 import ReactIcon from './assets/icons/react.svg';
+import JSIcon from './assets/icons/js.svg';
+import TSIcon from './assets/icons/ts.svg';
+import CypressIcon from './assets/icons/cypress.svg';
 
 import ProjectTile from './components/ProjectTile/ProjectTile';
-import Link from './components/LinkContainer/Link';
 import LinkContainer from './components/LinkContainer/LinkContainer';
 
 const links = [
@@ -26,13 +27,14 @@ function App() {
       <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
         {/* Lead text */}
         <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4">
-          Hello! I’m Alex Pike, an Automation Engineer (SDET Lead) employed by Planit Testing.
+          Hello! I’m Alex Pike, an Automation Engineer (SDET Lead) employed by Planit Testing, based in Sydney,
+          Australia.
         </section>
 
         <section>
           {/* Sub text */}
           <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug">
-            I create automated, end-to-end, API, component testing solutions using the latest frameworks and tool to
+            I create automated, end-to-end, API and component testing solutions using the latest frameworks and tool to
             mitigate risks in products and ensure quality in code as part of a complete CI/CD pipeline.
           </p>
           {/* Links */}
@@ -43,10 +45,39 @@ function App() {
 
         {/* Project container */}
         <section className="lg:mt-16 md:mt-12 sm:mt-10 mt-8">
-          <div className="font-mono sm:text-xl text-lg">
-            <p>My Projects</p>
-          </div>
           {/* Project tiles */}
+          <div className="font-mono sm:text-xl text-lg">
+            <p>Professional Projects</p>
+          </div>
+          <section className="flex flex-wrap justify-start mt-6 sm:text-lg text-base">
+            <ProjectTile
+              title={'Cypress TypeScript Demo'}
+              icons={[CypressIcon, TSIcon]}
+              paragraphs={[
+                <>
+                  An implementation of the <b>Cypress</b> testing framework in <b>TypeScript</b> created as a
+                  demonstration of a native implementation, using best practices and practical methods.
+                </>,
+              ]}
+              links={[{ url: 'https://github.com/theRamenWithin/cypressjupitertoys-typescript', view: 'Github' }]}
+            />
+
+            <ProjectTile
+              title={'SugerAgent TypeScript'}
+              icons={[TSIcon]}
+              paragraphs={[
+                <>
+                  An implementation of <b>SuperAgent</b> API library in <b>TypeScript</b> created as a demonstration of
+                  how to do API testing based off of Swagger's sanple Petstore server.
+                </>,
+              ]}
+              links={[{ url: 'https://github.com/theRamenWithin/cypressjupitertoys-typescript', view: 'Github' }]}
+            />
+          </section>
+
+          <div className="font-mono sm:text-xl text-lg">
+            <p>Class Projects</p>
+          </div>
           <section className="flex flex-wrap justify-start mt-6 sm:text-lg text-base">
             <ProjectTile
               title={'AppointmentNow'}
