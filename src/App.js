@@ -8,6 +8,15 @@ import RailsIcon from './assets/icons/rails.svg';
 import ReactIcon from './assets/icons/react.svg';
 
 import ProjectTile from './components/ProjectTile/ProjectTile';
+import Link from './components/LinkContainer/Link';
+import LinkContainer from './components/LinkContainer/LinkContainer';
+
+const links = [
+  { url: 'https://github.com/theRamenWithin/', view: 'Github' },
+  { url: Resume, view: 'Resume' },
+  { url: 'https://www.linkedin.com/in/alex-pike-ap/', view: 'LinkedIn' },
+  { url: 'alex.pike.ap@outlook.com', view: 'Email' },
+];
 
 function App() {
   return (
@@ -17,74 +26,18 @@ function App() {
       <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
         {/* Lead text */}
         <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4">
-          Hello! I’m Alex Pike, a full-stack web developer based in Sydney, Australia. I am looking for an entry-level
-          position where I can develop my craft as a customer-focused programmer.
+          Hello! I’m Alex Pike, an Automation Engineer (SDET Lead) employed by Planit Testing.
         </section>
 
         <section>
           {/* Sub text */}
           <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug">
-            I graduated from{' '}
-            <a
-              href="https://coderacademy.edu.au/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              Coder Academy
-            </a>{' '}
-            in Feb of this year and my most recent role was interning with{' '}
-            <a
-              href="https://www.healthbank.io/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              HealthBank
-            </a>{' '}
-            on their production Ruby on Rails API, utilising GraphQL and RSpec, until April 1st.
+            I create automated, end-to-end, API, component testing solutions using the latest frameworks and tool to
+            mitigate risks in products and ensure quality in code as part of a complete CI/CD pipeline.
           </p>
           {/* Links */}
           <p className="leading-snug md:text-xl sm:text-lg text-base">
-            <a
-              href="https://github.com/theRamenWithin/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              Github
-            </a>{' '}
-            /{' '}
-            <a href={Resume} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
-              Resume
-            </a>{' '}
-            /{' '}
-            <a
-              href="https://www.linkedin.com/in/alex-pike-ap/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              LinkedIn
-            </a>{' '}
-            /{' '}
-            <a
-              href="https://twitter.com/theramenwithin/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              Twitter
-            </a>{' '}
-            /{' '}
-            <a
-              href="mailto:alex.pike.ap@outlook.com"
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              Email
-            </a>
+            <LinkContainer links={links} />
           </p>
         </section>
 
@@ -106,7 +59,7 @@ function App() {
                 <>AppointmentNow is a scalable, booking system customers and providers.</>,
               ]}
               links={[
-                { url: 'https://github.com/theRamenWithin/T3A2_Project/blob/main/docs/README.md', view: 'on Github' },
+                { url: 'https://github.com/theRamenWithin/T3A2_Project/blob/main/docs/README.md', view: 'Github' },
                 { url: 'https://appointmentnow.netlify.app/', view: 'Live' },
               ]}
             />
@@ -122,7 +75,7 @@ function App() {
                 'SwordArtisanOnline is a two-way market place for Historical European Martial Arts (HEMA) equipment.',
               ]}
               links={[
-                { url: 'https://github.com/theRamenWithin/SwordArtisanOnline', view: 'on Github' },
+                { url: 'https://github.com/theRamenWithin/SwordArtisanOnline', view: 'Github' },
                 { url: 'https://swordartisanonline.herokuapp.com/', view: 'Live' },
               ]}
             />
@@ -138,7 +91,7 @@ function App() {
                 <>Blogapp is a simple app for creating, reading, editing and deleting blog posts.</>,
               ]}
               links={[
-                { url: 'https://github.com/theRamenWithin/blog_app', view: 'on Github' },
+                { url: 'https://github.com/theRamenWithin/blog_app', view: 'Github' },
                 { url: 'https://blogapp-2020.herokuapp.com/', view: 'Live' },
               ]}
             />
@@ -157,8 +110,8 @@ function App() {
                 </>,
               ]}
               links={[
-                { url: 'https://github.com/theRamenWithin/DungeonsOfHeck', view: 'on Github' },
-                { url: 'https://rubygems.org/gems/dungeonsofheck', view: 'on RubyGems' },
+                { url: 'https://github.com/theRamenWithin/DungeonsOfHeck', view: 'Github' },
+                { url: 'https://rubygems.org/gems/dungeonsofheck', view: 'RubyGems' },
               ]}
             />
 
@@ -172,7 +125,7 @@ function App() {
                 </>,
               ]}
               links={[
-                { url: 'https://github.com/theRamenWithin/portfolio-sep-20', view: 'on Github' },
+                { url: 'https://github.com/theRamenWithin/portfolio-sep-20', view: 'Github' },
                 { url: 'https://alexpikeap.netlify.app', view: 'Live' },
               ]}
             />

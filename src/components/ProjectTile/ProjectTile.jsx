@@ -1,5 +1,5 @@
 import Icon from '../Icon/Icon';
-import Link from '../Link/Link';
+import LinkContainer from '../LinkContainer/LinkContainer';
 
 export default function ProjectTile(props) {
   return (
@@ -16,13 +16,7 @@ export default function ProjectTile(props) {
         })}
       </section>
       <section className="mt-2">
-        {props.links.map((link, i) => {
-          return (
-            <>
-              <Link url={link.url} view={link.view} /> {i + 1 < props.links.length && <>/ {''}</>}
-            </>
-          );
-        })}
+        <LinkContainer links={props.links} />
       </section>
     </div>
   );
