@@ -71,7 +71,9 @@ function App() {
                   how to do API testing based off of Swagger's sanple Petstore server.
                 </>,
               ]}
-              links={[{ url: 'https://github.com/theRamenWithin/cypressjupitertoys-typescript', view: 'Github' }]}
+              links={[
+                { url: 'https://github.com/theRamenWithin/swaggerpetstore-superagent-typescript', view: 'Github' },
+              ]}
             />
           </section>
 
