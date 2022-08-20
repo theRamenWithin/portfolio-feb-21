@@ -14,7 +14,7 @@ import ProjectTileHeading from './components/ProjectTile/ProjectTileHeading';
 import ProjectTileSection from './components/ProjectTile/ProjectTileSection';
 import LinkContainer from './components/Link/LinkContainer';
 
-function App() {
+export default function App() {
   return (
     // Window container
     <section className="App h-full w-full flex justify-center font-sans text-gray-600">
@@ -166,5 +166,3 @@ function App() {
     </section>
   );
 }
-
-export default App;
