@@ -29,8 +29,8 @@ export default function App() {
         <section>
           {/* Sub text */}
           <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug">
-            I create automated, end-to-end, API and component testing solutions using the latest frameworks and tool to
-            mitigate risks in products and ensure quality in code as part of a complete CI/CD pipeline.
+            I create automated, end-to-end, API and component testing solutions using the latest frameworks and tools to
+            mitigate risk in products and ensure quality in code as part of a complete CI/CD pipeline.
           </p>
           {/* Links */}
           <p className="leading-snug md:text-xl sm:text-lg text-base">
