@@ -16,12 +16,11 @@ import LinkContainer from './components/Link/LinkContainer';
 import Background from './components/Background/Background';
 
 export default function App() {
+  return <Background />;
   return (
     <>
-      {/* ThreeJS background */}
       {/* Window container */}
       <section className="App h-full w-full flex justify-center font-sans text-gray-600">
-        <Background />
         {/* Content container */}
         <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
           {/* Lead text */}

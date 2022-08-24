@@ -1,17 +1,9 @@
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
-import { useRef, useMemo } from 'react';
+import { Loader, PerspectiveCamera, Points, Point, useTexture, Environment } from '@react-three/drei';
+import { useRef, useMemo, Suspense } from 'react';
 import { TextureLoader } from 'three';
 
 import * as THREE from 'three';
-
-// /**
-//  * Base
-//  */
-// // Canvas
-// const canvas = document.querySelector('canvas.webgl');
-
-// // Scene
-// const scene = new THREE.Scene();
 
 // /**
 //  * Textures
@@ -130,10 +122,13 @@ import * as THREE from 'three';
 
 export default function Background() {
   return (
-    <Canvas gl={{ antialias: false }} camera={{ position: [0, 0, 15], near: 5, far: 20 }}>
-      <color attach="background" args={['red']} />
-      <Scene />
-    </Canvas>
+    <Suspense>
+      <Canvas frameloop="demand" dpr={[1, 2]} camera={{ position: [0, 0, 40] }}>
+        <pointLight intensity={1} position={[-10, -25, -10]} />
+        <Scene />
+        <Environment preset="city" />
+      </Canvas>
+    </Suspense>
   );
 }
 
@@ -147,60 +142,48 @@ function Scene({ particleCount = 4000 }) {
 
   //   particlesGeometry.attributes.position.needsUpdate = true;
 
-  //   // Render
-  //   renderer.render(scene, camera);
-
   //   // Calls tick() per frame
   //   window.requestAnimationFrame(tick);
   // };
-  const geoRef = useRef();
+  // const geoRef = useRef();
 
-  useFrame((state) => {
-    const elapsedTime = state.clock.getElapsedTime();
+  // useFrame((state) => {
+  //   const elapsedTime = state.clock.getElapsedTime();
 
-    for (let i = 0; i < particleCount; i++) {
-      const i3 = i * 3;
+  //   for (let i = 0; i < particleCount; i++) {
+  //     const i3 = i * 3;
 
-      const x = geoRef.current.attributes.position.array[i3 + 0];
-      geoRef.current.attributes.position.array[i3 + 1] = Math.sin(elapsedTime + x);
-    }
+  //     const x = geoRef.current.attributes.position.array[i3 + 0];
+  //     geoRef.current.attributes.position.array[i3 + 1] = Math.sin(elapsedTime + x);
+  //   }
 
-    geoRef.current.attributes.position.needsUpdate = true;
-  });
+  //   geoRef.current.attributes.position.needsUpdate = true;
+  // });
 
-  const baseColor = 'rgba(75, 85, 99, 1)';
+  // const baseColor = 'rgba(75, 85, 99, 1)';
 
-  const particleTexture = useLoader(TextureLoader, '/src/assets/particles/particle.png');
+  const particleTexture = new THREE.TextureLoader().load('/src/assets/particles/particle.png');
 
-  const [positions, colors] = useMemo(() => {
-    return [new Float32Array(particleCount), new Float32Array(particleCount)];
-  }, [particleCount]);
+  const positions = new Float32Array(particleCount * 3);
+  const colors = new Float32Array(particleCount * 3);
 
   for (let i = 0; i < particleCount * 3; i++) {
     positions[i] = (Math.random() - 0.5) * 10;
-    colors[i] = baseColor;
+    colors[i] = Math.random();
   }
 
   return (
-    <points>
-      <bufferGeometry attach="geometry" ref={geoRef}>
-        <bufferAttribute
-          attachObject={['attributes', 'position']}
-          count={positions.length * 3}
-          array={positions}
-          itemSize={3}
-        />
-        <bufferAttribute attachObject={['attributes', 'rgba']} count={colors.length * 3} array={colors} itemSize={3} />
-        <pointsMaterial
-          attach="material"
-          size={0.1}
-          transparent
-          alphaMap={particleTexture}
-          depthWrite={false}
-          blending={THREE.AdditiveBlending}
-          vertexColors
-        />
-      </bufferGeometry>
-    </points>
+    <Points limit={1000} range={1000}>
+      <pointsMaterial
+        attach="material"
+        size={50}
+        transparent={true}
+        alphaMap={particleTexture}
+        depthWrite={false}
+        blending={THREE.AdditiveBlending}
+        vertexColors
+      />
+      <Point position={[...Array(100).keys()]} color={'red'} />;
+    </Points>
   );
 }
