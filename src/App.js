@@ -16,22 +16,22 @@ import LinkContainer from './components/Link/LinkContainer';
 import Background from './components/Background/Background';
 
 export default function App() {
-  return <Background />;
   return (
     <>
       {/* Window container */}
-      <section className="App h-full w-full flex justify-center font-sans text-gray-600">
+      <section className="App static h-full w-full flex justify-center font-sans text-gray-600">
+        <Background />
         {/* Content container */}
-        <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl">
+        <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl z-10">
           {/* Lead text */}
-          <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4">
+          <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4 bg-opacity-80 bg-white rounded">
             Hello! I’m Alex Pike, an Automation Engineer (SDET Lead) employed by Planit Testing, based in Sydney,
             Australia.
           </section>
 
           <section>
             {/* Sub text */}
-            <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug">
+            <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug bg-opacity-80 bg-white rounded">
               I create automated, end-to-end, API and component testing solutions using the latest frameworks and tools
               to mitigate risk in products and ensure quality in code as part of a complete CI/CD pipeline.
             </p>
@@ -71,7 +71,7 @@ export default function App() {
                 paragraphs={[
                   <>
                     An implementation of <b>SuperAgent</b> API library in <b>TypeScript</b> created as a demonstration
-                    of how to do API testing based off of Swagger's sanple Petstore server.
+                    of how to do API testing based off of Swagger's sample Petstore server.
                   </>,
                 ]}
                 links={[
