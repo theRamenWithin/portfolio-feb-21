@@ -1,11 +1,11 @@
-import Resume from './assets/docs/Resume_AlexPike.pdf';
+import Resume from './assets/docs/Alex_Pike_CV_2025.pdf';
 
-import HTML5Icon from './assets/icons/html5.svg';
-import CSS3Icon from './assets/icons/css3.svg';
-import RubyIcon from './assets/icons/ruby.svg';
-import RailsIcon from './assets/icons/rails.svg';
-import ReactIcon from './assets/icons/react.svg';
-import JSIcon from './assets/icons/js.svg';
+// import HTML5Icon from './assets/icons/html5.svg';
+// import CSS3Icon from './assets/icons/css3.svg';
+// import RubyIcon from './assets/icons/ruby.svg';
+// import RailsIcon from './assets/icons/rails.svg';
+// import ReactIcon from './assets/icons/react.svg';
+// import JSIcon from './assets/icons/js.svg';
 import TSIcon from './assets/icons/ts.svg';
 import CypressIcon from './assets/icons/cypress.svg';
 
@@ -25,15 +25,16 @@ export default function App() {
         <div className="pt-8 pb-8 h-full w-4/5 max-w-screen-xl z-10">
           {/* Lead text */}
           <section className="md:text-5xl md:leading-tight sm:text-4xl text-3xl font-bold text-gray-800 mb-4 bg-opacity-80 bg-white rounded">
-            Hello! I’m Alex Pike, an Automation Engineer (SDET Lead) employed by Planit Testing, based in Sydney,
-            Australia.
+            Hello! I’m Alex Pike, a Platform Engineer employed by Planit Testing, based in
+            Naarm/Melbourne, Australia.
           </section>
 
           <section>
             {/* Sub text */}
             <p className="mb-4 md:text-3xl sm:text-2xl text-xl leading-snug bg-opacity-80 bg-white rounded">
-              I create automated, end-to-end, API and component testing solutions using the latest frameworks and tools
-              to mitigate risk in products and ensure quality in code as part of a complete CI/CD pipeline.
+              I create automated, end-to-end, API and component testing solutions using
+              the latest frameworks and tools to mitigate risk in products and ensure
+              quality in code as part of a complete CI/CD pipeline.
             </p>
             {/* Links */}
             <p className="leading-snug md:text-xl sm:text-lg text-base">
@@ -58,11 +59,17 @@ export default function App() {
                 icons={[CypressIcon, TSIcon]}
                 paragraphs={[
                   <>
-                    An implementation of the <b>Cypress</b> testing framework in <b>TypeScript</b> created as a
-                    demonstration of a native implementation, using best practices and practical methods.
+                    An implementation of the <b>Cypress</b> testing framework in{' '}
+                    <b>TypeScript</b> created as a demonstration of a native
+                    implementation, using best practices and practical methods.
                   </>,
                 ]}
-                links={[{ url: 'https://github.com/theRamenWithin/cypressjupitertoys-typescript', view: 'Github' }]}
+                links={[
+                  {
+                    url: 'https://github.com/theRamenWithin/cypressjupitertoys-typescript',
+                    view: 'Github',
+                  },
+                ]}
               />
 
               <ProjectTile
@@ -70,17 +77,21 @@ export default function App() {
                 icons={[TSIcon]}
                 paragraphs={[
                   <>
-                    An implementation of <b>SuperAgent</b> API library in <b>TypeScript</b> created as a demonstration
-                    of how to do API testing based off of Swagger's sample Petstore server.
+                    An implementation of <b>SuperAgent</b> API library in{' '}
+                    <b>TypeScript</b> created as a demonstration of how to do API testing
+                    based off of Swagger's sample Petstore server.
                   </>,
                 ]}
                 links={[
-                  { url: 'https://github.com/theRamenWithin/swaggerpetstore-superagent-typescript', view: 'Github' },
+                  {
+                    url: 'https://github.com/theRamenWithin/swaggerpetstore-superagent-typescript',
+                    view: 'Github',
+                  },
                 ]}
               />
             </ProjectTileSection>
 
-            <ProjectTileHeading heading={'Class Projects'} />
+            {/* <ProjectTileHeading heading={'Class Projects'} />
             <ProjectTileSection>
               <ProjectTile
                 title={'AppointmentNow'}
@@ -163,7 +174,7 @@ export default function App() {
                   { url: 'https://alexpikeap.netlify.app', view: 'Live' },
                 ]}
               />
-            </ProjectTileSection>
+            </ProjectTileSection> */}
           </section>
         </div>
       </section>
